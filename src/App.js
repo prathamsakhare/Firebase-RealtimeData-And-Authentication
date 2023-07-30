@@ -3,6 +3,7 @@ import { app } from "./firebase";
 
 import "./App.css";
 import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
 
 const auth = getAuth(app);
 function App() {
@@ -16,7 +17,9 @@ function App() {
   return (
     <div className="App">
       <h1>Firebase React App</h1>
+      
       <SignUp />
+      <SignIn />
     </div>
   );
 }

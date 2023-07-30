@@ -18,6 +18,7 @@ const SignUp = () => {
   const handlePassChange = (e) => setPassword(e.target.value);
   return (
     <div>
+        <h1>Sign Up Page</h1>
       <div>
         <label>Email</label>
         <input
