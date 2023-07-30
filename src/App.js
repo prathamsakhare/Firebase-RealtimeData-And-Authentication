@@ -2,6 +2,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from "./firebase";
 
 import "./App.css";
+import SignUp from "./pages/SignUp";
 
 const auth = getAuth(app);
 function App() {
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <h1>Firebase React App</h1>
-      <button onClick={signUpUser}>Create User</button>
+      <SignUp />
     </div>
   );
 }
